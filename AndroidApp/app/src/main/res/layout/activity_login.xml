@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+    
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/logoGifImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/senal"
+        android:transitionName="logoImageTrans"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/bienvenidoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Bienvenido a Vital Health"
+        android:layout_marginTop="28dp"
+        android:textSize="32sp"
+        android:layout_gravity="center"
+        android:transitionName="textTrans"
+        />
+
+    <TextView
+        android:id="@+id/continuarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión para continuar"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:transitionName="iniciaSesionTextTrans"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:fontFamily="@font/abel"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/usuarioTextField"
+            android:transitionName="emailInputTextTrans"
+            android:hint="Email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/contrasenaTextField"
+            android:transitionName="passwordInputTextTrans"
+            android:fontFamily="@font/abel"
+            android:hint="Contraseña"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/olvidasteContra"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textSize="15dp"
+            android:fontFamily="@font/abel"
+            android:textColor="@android:color/darker_gray"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Olvidaste tú contraseña?"/>:
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/inicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abel"
+            android:text="INICIO"
+            android:layout_marginTop="12dp"
+            android:transitionName="buttonRegistroTrans"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/loginGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            />
+
+        <TextView
+            android:id="@+id/nuevoUsuario"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:transitionName="newUserTrans"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/abel"
+            android:text="Eres nuevo usuario? Registrate!"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sinRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
+        android:text="Sin Registro"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="end"
+        android:transitionName="buttonSinRegistroTrans"/>
+
+</LinearLayout>

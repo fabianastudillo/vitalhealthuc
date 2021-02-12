@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jakewharton.rx2:replaying-share:2.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton.rx2/replaying-share/2.2.0/766ca88fe8c6715ef0d755d12797e3afd10b250a/replaying-share-2.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton.rx2/replaying-share/2.2.0/419cc773eef0f8b6edb78ce9e34313a66588b286/replaying-share-2.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton.rx2/replaying-share/2.2.0/5c63c4bd6c72d168ea22580306ea51a97bed055/replaying-share-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

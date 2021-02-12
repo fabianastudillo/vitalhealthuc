@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "532437655940",
+    "project_id": "vital-healt",
+    "storage_bucket": "vital-healt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532437655940:android:507e49ab0cccb8b1233dd1",
+        "android_client_info": {
+          "package_name": "com.example.ecg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532437655940-pr2epro47tle62m5vrpmvsu141kq7lpe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgbrCVLeGCRo-AfGGOoJauuN-4qRFC6GM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532437655940-pr2epro47tle62m5vrpmvsu141kq7lpe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    app:layout_goneMarginBottom="15dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Indicaciones"
+    tools:showIn="@layout/activity_indicaciones">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- Bienvenida-->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/vh"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Vital Health"
+                android:textColor="@color/light_blue_600"
+                android:textSize="40dp"
+                />
+
+            <TextView
+                android:id="@+id/uc"
+                style="@style/Widget.MaterialComponents.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="UC"
+                android:textColor="@color/light_blue_600"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:text="Bienvenido"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="¡Hola ! Te damos la bienvenida a esta APP de monitoreo cardiaco de uso personal, portátil y de bajo costo. Sabemos que para ti el cuidado de tu salud es muy importante, por lo que nosotros te ayudaremos en ello. Para esto podrás visualizar en tiempo real el funcionamiento de tú corazon, ademas de más beneficios que ofrece nuestra APP, los cuales te los vamos a mencionar..."
+                android:textAlignment="viewStart"
+                android:textSize="20dp"
+                />
+
+            <!-- Funciones-->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/funciones"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Funciones"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Vital Health maneja 2 sistemas de funcionamiento, en los cuales podrás gozar de diferentes beneficios. El primero es el usuario no registrado, el cual solo podrá ver la gráficas de una sola derivación en tiempo real de su corazón, así como poder saber su frecuencia cardiaca. En segundo lugar tenemos el usuario registrado, el mismo que cuentas con muchos más privilegios: visualización de las 12 derivaciones de su ECG en tiempo real, visualización de su frecuencia cardiaca, almacenamiento de sus muestras en una base de datos, visualización de los registros de sus señales almacenadas, notificación a su médico tratante, si se detecta de una anomalía."
+                android:textAlignment="viewStart"
+                android:textSize="20dp"
+                />
+
+            <!-- Usuario no registrado-->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/celularsenal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Usuario no registrado"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Sabemos que el cuidado de tu corazón es importante, pero no deseas registrarte en ninguna plataforma. Y nosotros te ayudaremos en esto, con nuestra APP podrás monitorear tu corazón en tiempo real desde tu celular, pudiendo ver la señal de una derivación de tu ECG, así como conocer tu frecuencia cardiaca, pero si deseas tener aún más beneficios, te invitamos a registrarte en Vital Health..."
+                android:textSize="20dp"
+                />
+
+            <!-- Usuario  registrado-->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/registro"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Usuario Vital Health"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Si deseas registrarte como un usuario de Vital Health, podrás gozar de un sistema telemedicina, el cual te permitirá tener la visualización de tú ECG de 12 derivaciones, el cual es una aproximación a un Electrocardiograma profesional. Además podrás enviar esta información a tú médico tratante sin la necesidad de salir de tu casa, y a continuación te detallaremos más benéficos si nos eliges..."
+                android:textSize="20dp"
+                />
+
+            <!-- Beneficio 1-->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/pulso"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Visualización completa de tú ECG"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Al registrarte podrás ver en tiempo real las 12 derivaciones de tú ECG: I, II, II aVR, aVL, aVF, V1, V2, V3, V4, V5 y V6. Nuestros sistema, mediante un proceso de filtrado digital de señales nos permite llegar a una aproximación de estas 12 derivaciones, las cuales son las más utilizadas en los ECG profesionales"
+                android:textSize="20dp"
+                />
+
+            <!-- Beneficio 2-->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/almacenado"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Almacenamiento"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Al momento de visualizar tú ECG, te damos la opción de almacenar en tu perfil, un registro de 5 segundos de duración de tu señal, el mismo que podrás visualizar en el momento que desees o borrar de tu perfil. Esta información no estar en tú celular, sino que se será almacenada en una base de datos en la nube"
+                android:textSize="20dp"
+                />
+
+            <!-- Beneficio 3-->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/senal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Frecuencia cardiaca"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Al momento de estar monitoreando tu corazón, podrás observar tu frecuencia cardiaca, la cual te puede dar indicios de un mal funcionamiento de tu sistema cardiaco con Bradicardia si la frecuencia es baja y Taquicardia si esta frecuencia es alta"
+                android:textSize="20dp"
+                />
+
+            <!-- Beneficio 4-->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/mensaje"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Mensaje a tú médico"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Si nuestro sistema de monitoreo cardiaco, detecta anomalías de manera reiterativa, enviará un correo electrónico a tu médico tratante, para que este pueda estar al tanto de las mismas y así puedas tener a tu médico informado de tu estado de salud actual sin la necesidad de salir de tu casa"
+                android:textSize="20dp"
+                />
+
+            <!-- Beneficio 5-->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/medico"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Contamos con médicos"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Si tú no cuentas con un cardiólogo, nosotros contamos con médicos los cuales tú podrás seleccionar al momento de tu registro. Nuestros médicos se mantendrán al tanto de tu información y estarán prestos a atenderte en el caso que tú les desees realizar alguna consulta."
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Siguiente"
+                android:textSize="15dp"
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.core.widget.NestedScrollView>

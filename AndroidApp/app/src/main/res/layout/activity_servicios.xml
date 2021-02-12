@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/logoGifImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/senal"
+            android:transitionName="logoImageTrans"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/archivoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Servicios BLE"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/logoGifImageView"
+            app:layout_constraintStart_toEndOf="@+id/logoGifImageView"
+            android:textStyle="bold"
+            android:textColor="#4B000000"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/Widget.MaterialComponents.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Vital Health"
+            android:textSize="40dp"
+            app:layout_constraintStart_toEndOf="@+id/logoGifImageView"
+            app:layout_constraintTop_toTopOf="@+id/logoGifImageView"
+            android:textStyle="bold"
+            android:textColor="@color/light_blue_600"/>
+
+        <TextView
+            android:id="@+id/uc"
+            style="@style/Widget.MaterialComponents.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="UC"
+            android:textColor="@color/light_blue_600"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/titleTextView"
+            app:layout_constraintStart_toEndOf="@+id/titleTextView"
+            app:layout_constraintTop_toTopOf="@+id/titleTextView"
+            app:layout_constraintVertical_bias="0.805" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Servicios BLE"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/scan_results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="220dp"
+        android:padding="15dp"
+        android:scrollbars="vertical"/>
+</RelativeLayout>

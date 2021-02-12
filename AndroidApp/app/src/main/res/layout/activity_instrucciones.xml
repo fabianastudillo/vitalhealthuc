@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Instrucciones">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/logoGifImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/senal"
+            android:transitionName="logoImageTrans"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/archivoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Instrucciones de uso"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/logoGifImageView"
+            app:layout_constraintStart_toEndOf="@+id/logoGifImageView"
+            android:textStyle="bold"
+            android:textColor="#4B000000"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/Widget.MaterialComponents.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Vital Health"
+            android:textSize="40dp"
+            app:layout_constraintStart_toEndOf="@+id/logoGifImageView"
+            app:layout_constraintTop_toTopOf="@+id/logoGifImageView"
+            android:textStyle="bold"
+            android:textColor="@color/light_blue_600"/>
+
+
+        <TextView
+            android:id="@+id/uc"
+            style="@style/Widget.MaterialComponents.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="UC"
+            android:textColor="@color/light_blue_600"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/titleTextView"
+            app:layout_constraintStart_toEndOf="@+id/titleTextView"
+            app:layout_constraintTop_toTopOf="@+id/titleTextView"
+            app:layout_constraintVertical_bias="0.805" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/stepTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:text="Paso 1"
+            android:textColor="@color/light_blue_600"
+            android:fontFamily="sans-serif-black"
+            android:textSize="40dp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:text="Dirijete a la sección de señal, es la que tiene un corazón!... No olvides colocar los electrodos de la manera correcta, muñecas y pierna o la opcion de pecho y abdomen"
+            android:textSize="25dp"
+            android:padding="20dp"
+            >
+
+        </TextView>
+
+        <com.shuhart.stepview.StepView
+            android:id="@+id/step_View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:layout_marginTop="350dp"
+            app:sv_doneCircleColor="@color/light_blue_600"
+            app:sv_doneCircleRadius="15dp"
+            app:sv_doneStepLineColor="@color/light_blue_600"
+            app:sv_doneStepMarkColor="@color/cardview_light_background"
+            app:sv_nextStepLineColor="@color/light_blue_600"
+            app:sv_nextTextColor="@color/light_blue_600"
+            app:sv_selectedCircleRadius="15dp"
+            app:sv_selectedStepNumberColor="@color/light_blue_600"
+            app:sv_selectedTextColor="@color/light_blue_600"
+            app:sv_stepLineWidth="3dp"
+            app:sv_stepNumberTextSize="18sp"
+            app:sv_stepPadding="4dp"
+            app:sv_stepViewStyle="@style/StepView"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        app:labelVisibilityMode="selected"
+        />
+
+
+
+</RelativeLayout>

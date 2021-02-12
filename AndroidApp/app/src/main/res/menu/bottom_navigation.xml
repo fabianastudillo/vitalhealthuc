@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/instrucciones"
+        android:icon="@drawable/informacion"
+        android:title="Instrucciones"
+        />
+
+    <item
+        android:id="@+id/senal"
+        android:icon="@drawable/corazon"
+        android:title="ECG"/>
+
+    <item
+        android:id="@+id/archivo"
+        android:icon="@drawable/grabaciones"
+        android:title="Archivo"
+        />
+
+    <item
+        android:id="@+id/usuario"
+        android:icon="@drawable/usuario"
+        android:title="Usuario"/>
+
+</menu>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ecg">
+
+    <application
+        android:name=".ConexionBLE"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ECG">
+        <activity
+            android:name=".GraficaArchivo"
+            android:label="Vital Health UC"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".CompletarRegistroGogle"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InstruccionesSinRegistro"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SenalSinRegistro"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SinRegistro"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Archivo"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Senal"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Instrucciones"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Registrado"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgotPassword"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Usuario"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Registro"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Indicaciones"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ECG.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ECG.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ble_login.Escaneo.Escaneoctivity"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ble_login.DispositivosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ble_login.Conexion.ConexionActivity"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ble_login.Grafica.CaracteristicasOperacionActivity"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ble_login.Servicios.ServiciosDescubiertosActivity"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ble.Escaneo.EscaneoActivity"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ble.DispositivosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ble.Conexion.ConexionActivity"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ble.Grafica.CaracteristicasOperacionActivity"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ble.Servicios.ServiciosDescubiertosActivity"
+            android:label="Vital Health UC"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
